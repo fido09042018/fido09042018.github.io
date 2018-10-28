@@ -8,3 +8,11 @@ $('form').on('submit', (event) => {
     )
     $("#ola").val(``) ////odstrani hodnoty vlozene v poli
   });
+
+
+  let path = "posts/1";
+let dataToSave = {
+  title: "My first saved blog post",
+  text: "Some hilarious content, which proves how awesome I am."
+};
+fb.ref(path).set(dataToSave);
