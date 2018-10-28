@@ -8,7 +8,6 @@ $('form').on('submit', (event) => {
     )
     $("#ola1").val(``) ////odstrani hodnoty vlozene v poli
   });
-
 $('form').on('submit', (event) => {
     event.preventDefault();
     ///alert($("#ola").val())
