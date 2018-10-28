@@ -44,6 +44,9 @@
                         </label>
                         <br>
                         <input type ="text">
+
+    </form>
+
                     </div>
         <article>
                 <ul>
@@ -65,7 +68,6 @@
                         <!--<img src="https://img.cncenter.cz/img/11/normal690/2815053-img-polsky-zloty-ilustracni-foto-v0.jpg?v=0"-->
                 </form>
     </main>
- 
         <script>
         </script>
         <!-- or have the scripts in a separate scripts.js file -->
@@ -76,5 +78,19 @@
                 <video src="VID-20180622-WA0004.mp4" controls width="800" height="360"></video>
             </div>
         </section>
+        <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA2ClNlIJ8M4kpJYAuWGJyKQMcpDeQp5ls",
+    authDomain: "fido-b8712.firebaseapp.com",
+    databaseURL: "https://fido-b8712.firebaseio.com",
+    projectId: "fido-b8712",
+    storageBucket: "fido-b8712.appspot.com",
+    messagingSenderId: "279266174427"
+  };
+  firebase.initializeApp(config);
+  fb = firebase.database();
+</script>
 </body>
 </html>
