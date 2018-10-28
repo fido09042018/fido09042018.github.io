@@ -20,7 +20,7 @@ $('form').on('submit', (event) => {
     $("#ola2").val(``) ////odstrani hodnoty vlozene v poli
   });
 
-let path = "posts/1";
+let path = "posts";
 let dataToSave = {
   title: "This is my first web page",
   text: "Some hilarious content, which proves how awesome I am."
