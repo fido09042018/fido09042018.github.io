@@ -14,6 +14,15 @@
                 h2{background-color: hotpink
 
                 }
+                #player {
+                display: table;
+                width: 100%;
+                padding: 4px;
+        }
+        #player > div {
+                display: table-cell;
+                vertical-align: top;
+        }
             </style>
             <link href="styles.css" rel="stylesheet">
     </head>
@@ -58,5 +67,11 @@
         <!-- or have the scripts in a separate scripts.js file -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="scripts.js"></script>
+        <section id="player">
+            <div>
+                    <!-- Sem bude umístěno video -->
+            </div>
+            <video src="VID-20180622-WA0004.mp4" controls width="640" height="360"></video>
+        </section>
 </body>
 </html>
