@@ -3,15 +3,26 @@ $('form').on('submit', (event) => {
     ///alert($("#ola").val())
    $('ul').append(
         `
-        <li>${$("#ola").val()}</li>
+        <li>${$("#ola1").val()}</li>
         `
     )
-    $("#ola").val(``) ////odstrani hodnoty vlozene v poli
+    $("#ola1").val(``) ////odstrani hodnoty vlozene v poli
   });
 
-  let path = "posts";
+$('form').on('submit', (event) => {
+    event.preventDefault();
+    ///alert($("#ola").val())
+   $('ul').append(
+        `
+        <li>${$("#ola2").val()}</li>
+        `
+    )
+    $("#ola2").val(``) ////odstrani hodnoty vlozene v poli
+  });
+
+let path = "posts/1";
 let dataToSave = {
-  title: "My first saved blog post",
+  title: "This is my first web page",
   text: "Some hilarious content, which proves how awesome I am."
 };
 fb.ref(path).set(dataToSave);
